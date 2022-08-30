@@ -29,3 +29,6 @@ jobs:
       with:
        name: greetings-jar
        path: build/libs
+    - shell: bash
+      run: |
+       java -jar greetings-actions.jar ${{ github.event.inputs.myValues }}
